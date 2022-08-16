@@ -6,15 +6,16 @@ After writing your travel story in travl markdonw format, omer converts your tra
 
 Create a source folder in travl format: a source folder with markdown and an /img folder
 
-Build the project
+Build the project:
 
 ```
 bash ./shell/build.sh
 ```
 
-It creates a dist folder.
+It creates a dist/ folder with resized images and md converted in html.
+It supports .png and .jpg.
 
-Publish it
+Publish it with surge:
 
 ```
 surge --domain my-example-domain.surge.sh
@@ -24,7 +25,9 @@ surge --domain my-example-domain.surge.sh
 
 A folder named "source".
 
-source mandatory:
+source is mandatory.
+
+An example of a source structure:
 - img (folder) mandatory
 - my-text.md (markdown file)
 - my-another.md (markdown file)
