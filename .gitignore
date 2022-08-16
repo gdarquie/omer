@@ -1,0 +1,8 @@
+dist/
+source/
+
+# IDE
+.idea/
+.vscode/
+
+Makefile
